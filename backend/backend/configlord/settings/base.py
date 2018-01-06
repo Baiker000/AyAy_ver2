@@ -53,9 +53,9 @@ STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 ]
 STATICFILES_DIRS = [
-    FRONTEND_ROOT,# path.join(FRONTEND_ROOT, 'dist')
+    FRONTEND_ROOT, path.join(FRONTEND_ROOT, 'dist','static')
 ]
-print (path.join(FRONTEND_ROOT, 'dist'))
+print (path.join(FRONTEND_ROOT, 'dist','static'))
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -74,3 +74,4 @@ TEMPLATES = [
 
 ALLOWED_HOSTS = ['192.168.1.63', '127.0.0.1', '192.168.1.101', '78.26.210.61']
 
+APPEND_SLASH=False
