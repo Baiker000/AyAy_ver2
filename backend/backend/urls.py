@@ -18,10 +18,14 @@ from django.urls import path
 from django.conf.urls import url, include
 from django.views.generic import TemplateView
 from backend.applications.api.v1.routes import api_router
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view=get_swagger_view(title='Games')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^api/v1/', include(api_router.urls)),
+    url(r'^docs/', schema_view),
     url(r'^$', TemplateView.as_view(template_name="dist/index.html"), name='index'),
 
 ]

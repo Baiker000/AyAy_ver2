@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_swagger',
     'main',
     'games',
 ]
@@ -74,4 +75,4 @@ TEMPLATES = [
 
 ALLOWED_HOSTS = ['192.168.1.63', '127.0.0.1', '192.168.1.101', '78.26.210.61']
 
-APPEND_SLASH=False
+APPEND_SLASH=True
