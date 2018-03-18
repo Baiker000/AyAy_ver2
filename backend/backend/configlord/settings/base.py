@@ -1,15 +1,15 @@
-import environ
+# import environ
 from os import path
 import pathlib
 
 BASE_DIR = path.dirname(path.dirname(path.abspath(__file__)))
-project_root = environ.Path(__file__) - 3
-env = environ.Env(DEBUG=(bool, False),)
+# project_root = environ.Path(__file__) - 3
+# env = environ.Env(DEBUG=(bool, False),)
 CURRENT_ENV = 'dev' # 'dev' is the default environment
 FRONTEND_ROOT=path.join(pathlib.Path(BASE_DIR).parents[2], 'frontend')
 print(FRONTEND_ROOT)
 # read the .env file associated with the settings that're loaded
-env.read_env('backend/configlord/{}.env'.format(CURRENT_ENV))
+# env.read_env('backend/configlord/{}.env'.format(CURRENT_ENV))
 
 DATABASES = {
     'default': {
