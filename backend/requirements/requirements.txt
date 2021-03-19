@@ -9,7 +9,7 @@ Django==2.0rc1
 django-jinja==2.4.0
 djangorestframework==3.7.3
 idna==2.6
-Jinja2==2.9.6
+Jinja2==2.11.3
 libusb1==1.6.4
 MarkupSafe==1.0
 olefile==0.44
