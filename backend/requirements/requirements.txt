@@ -5,7 +5,7 @@ capstone-windows==3.0.4
 certifi==2017.7.27.1
 cffi==1.11.1
 chardet==3.0.4
-Django==2.0rc1
+Django==2.2.24
 django-jinja==2.4.0
 djangorestframework==3.7.3
 idna==2.6
