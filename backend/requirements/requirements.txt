@@ -2,7 +2,7 @@ adb==1.2.0
 archinfo==7.7.9.14
 bitstring==3.1.5
 capstone-windows==3.0.4
-certifi==2017.7.27.1
+certifi==2022.12.7
 cffi==1.11.1
 chardet==3.0.4
 Django==2.0rc1
